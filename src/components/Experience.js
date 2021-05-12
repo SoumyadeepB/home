@@ -17,44 +17,58 @@ export default class Experience extends React.Component {
         style={{ height: "100%", width: "90%", verticalAlign: "middle" }}
       >
         <Row>
+        <Col xs={1}></Col>
           <Col xs={10} className="edu1">
             <Row>
               <Col xs={3}>
-                <Image src="Fraunhofer.png" rounded fluid className="logo" />
+                <Image src="sony.jpg" rounded fluid className="logo-exp" />
               </Col>
 
               <Col xs={9}>
-                <h1> Fraunhofer IPA </h1>
-                <h5>Research Assistant</h5>
-                {diff[0] >= 12 ? (
+                <h1> Sony </h1>
+                <h5> Master Thesis - Deep Learning for Voice Cloning </h5>                
                   <h5>
-                    {Math.floor(diff[0] / 12)} Year {diff[0] % 12} Months
+                    November 2020 - April 2021
                   </h5>
-                ) : (
-                  <h5>{diff[0] % 12} Months</h5>
-                )}
-
                 <br />
               </Col>
             </Row>
           </Col>
         </Row>
         <Row>
+        <Col xs={1}></Col>
           <Col xs={10} className="edu2">
             <Row>
               <Col xs={3}>
-                <Image src="NRI.png" rounded fluid className="logo" />
+                <Image src="Fraunhofer.png" rounded fluid className="logo-exp" />
+              </Col>
+
+              <Col xs={9}>
+                <h1> Fraunhofer IPA </h1>
+                <h5>Research Assistant</h5>                
+                  <h5>
+                    May 2019 - June 2020
+                  </h5>
+                <br />
+              </Col>
+            </Row>
+          </Col>
+        </Row>
+        <Row>
+        <Col xs={1}></Col>
+          <Col xs={10} className="edu3">
+            <Row>
+              <Col xs={3}>
+                <Image src="NRI.png" rounded fluid className="logo-exp" />
               </Col>
               <Col xs={9}>
                 <h1>Nomura Research Institute</h1>
                 <h5>Associate Software Engineer</h5>
-                {diff[1] >= 12 ? (
+                
                   <h5>
-                    {Math.floor(diff[1] / 12)} Years, {diff[1] % 12} Months
+                    August 2017 - January 2018
                   </h5>
-                ) : (
-                  <h5>{diff[1] % 12} Months</h5>
-                )}
+                
               </Col>
             </Row>
           </Col>

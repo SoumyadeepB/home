@@ -6,6 +6,7 @@ import {
   Typography,
   Fab
 } from "@material-ui/core";
+import BuildIcon from '@material-ui/icons/Build';
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 import AssignmentIcon from "@material-ui/icons/Assignment";
 import LocalLibraryRoundedIcon from "@material-ui/icons/LocalLibraryRounded";
@@ -51,7 +52,7 @@ export default class SidePanel extends React.Component {
             >
               <Grid
                 item
-                xs={11}
+                xs={11} lg={12}
                 className="item"
                 style={{ marginBottom: "20px" }}
                 onClick={() => {
@@ -64,13 +65,13 @@ export default class SidePanel extends React.Component {
                   className="sections"
                   value={1}
                 >
-                  <AccountCircleIcon style={{ marginRight: "10px" }} />
-                  <Typography variant="subtitle1">Portfolio</Typography>
+                  <AccountCircleIcon style={{ marginRight: "10px", fontSize:"18px" }} />
+                  <Typography variant="subtitle1" className="subtitle1">Portfolio</Typography>
                 </IconButton>
               </Grid>
               <Grid
                 item
-                xs={11}
+                xs={11} lg={12}
                 className="item"
                 style={{ marginBottom: "20px" }}
                 onClick={() => {
@@ -83,13 +84,13 @@ export default class SidePanel extends React.Component {
                   value={2}
                   className="sections"
                 >
-                  <LocalLibraryRoundedIcon style={{ marginRight: "10px" }} />
-                  <Typography variant="subtitle1">Education</Typography>
+                  <LocalLibraryRoundedIcon style={{ marginRight: "10px", fontSize:"15px" }} />
+                  <Typography variant="subtitle1" className="subtitle1">Education</Typography>
                 </IconButton>
               </Grid>
               <Grid
                 item
-                xs={11}
+                xs={11} lg={12}
                 className="item"
                 style={{ marginBottom: "20px" }}
                 onClick={() => {
@@ -102,13 +103,13 @@ export default class SidePanel extends React.Component {
                   value={3}
                   className="sections"
                 >
-                  <WorkRoundedIcon style={{ marginRight: "10px" }} />
-                  <Typography variant="subtitle1">Experience</Typography>
+                  <WorkRoundedIcon style={{ marginRight: "10px", fontSize:"15px" }} />
+                  <Typography variant="subtitle1" className="subtitle1">Experience</Typography>
                 </IconButton>
               </Grid>
               <Grid
                 item
-                xs={11}
+                xs={11} lg={12}
                 className="item"
                 style={{ marginBottom: "20px" }}
                 onClick={() => {
@@ -121,13 +122,33 @@ export default class SidePanel extends React.Component {
                   value={4}
                   className="sections"
                 >
-                  <AssignmentIcon style={{ marginRight: "10px" }} />
-                  <Typography variant="subtitle1">Publications</Typography>
+                  <AssignmentIcon style={{ marginRight: "10px", fontSize:"15px" }} />
+                  <Typography variant="subtitle1" className="subtitle1">Publications</Typography>
                 </IconButton>
               </Grid>
               <Grid
                 item
-                xs={11}
+                xs={11} lg={12}
+                className="item"
+                style={{ marginBottom: "20px" }}
+                onClick={() => {
+                  window.location = "/home/#/Projects";
+                }}
+              >
+                <IconButton
+                  edge="start"
+                  color="inherit"
+                  value={4}
+                  className="sections"
+                >
+                  <BuildIcon style={{ marginRight: "10px", fontSize:"15px" }} />
+                  <Typography variant="subtitle1" className="subtitle1">  Projects  </Typography>
+                </IconButton>
+              </Grid>
+              
+              <Grid
+                item
+                xs={11} lg={12}
                 className="item"
                 style={{ marginBottom: "20px" }}
                 onClick={() => {
@@ -140,20 +161,19 @@ export default class SidePanel extends React.Component {
                   value={5}
                   className="sections"
                 >
-                  <StarsIcon style={{ marginRight: "10px" }} />{" "}
-                  <Typography variant="subtitle1">Achievements</Typography>
+                  <StarsIcon style={{ marginRight: "10px", fontSize:"15px" }} />{" "}
+                  <Typography variant="subtitle1" className="subtitle1">Achievements</Typography>
                 </IconButton>
               </Grid>
             </Grid>
           </Toolbar>
-        </AppBar>
-        <Container alignItems="center"
-          justifyContent="center">
-          <Row style={{ flex: '1', position: 'absolute', bottom: '1em', justifyContent: 'flex-end', textAlign: 'center' }}>
-            <img src="https://hitcounter.pythonanywhere.com/nocount/tag.svg?url=https%3A%2F%2Fsoumyadeepb.github.io%2F" alt="Hits" />
-
+          <Row style={{position: 'absolute', left:"1em",bottom: '1em',justifyContent: 'left', textAlign: 'left' }}>
+          <Col xs={3}>
+            <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fsoumyadeepb.github.io%2Fhome%2F&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Page+Visits&edge_flat=false"/>
+          </Col>          
           </Row>
-        </Container>
+        </AppBar>
+ 
       </React.Fragment>
 
     );

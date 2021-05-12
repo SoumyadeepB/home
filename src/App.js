@@ -7,6 +7,7 @@ import Achievements from "./components/Achievements";
 import Education from "./components/Education";
 import Portfolio from "./components/Portfolio";
 import Experience from "./components/Experience";
+import Project from "./components/Project";
 import Publications from "./components/Publications";
 
 export default class App extends React.Component {
@@ -23,7 +24,6 @@ export default class App extends React.Component {
     this.state.menu = value;
   };
   render() {
-    /* console.log("In App:", this.state);*/
     return (
       <div className="App full-width">
         <CssBaseline />
@@ -33,19 +33,20 @@ export default class App extends React.Component {
           justify="space-between"
           alignItems="center"
         >
-          <Grid item xs={2}>
+          <Grid item xs={3} md={4} lg={2}>
             <SidePanel
               menu={this.state.menu}
               onItemChange={this.onItemChange}
             />
           </Grid>
-          <Grid item xs={10}>
+          <Grid item xs={9} md={8} lg={10}>
             <HashRouter>
               <Switch>
                 <Route exact path="/" component={Portfolio} />
                 <Route exact path="/education" component={Education} />
                 <Route exact path="/experience" component={Experience} />
                 <Route exact path="/publications" component={Publications} />
+                <Route exact path="/projects" component={Project} />
                 <Route exact path="/achievements" component={Achievements} />
               </Switch>
             </HashRouter>

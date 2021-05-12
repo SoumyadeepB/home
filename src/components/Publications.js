@@ -11,7 +11,7 @@ export default class Publications extends React.Component {
       style={{ height: "100%", width: "90%", verticalAlign: "middle" }}
     >
       <Row>
-        <Table responsive variant="dark" striped bordered hover>
+        <Table responsive variant="light" striped bordered hover>
           <thead>
             <tr>
               <th> </th>

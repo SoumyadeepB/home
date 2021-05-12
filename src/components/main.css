@@ -21,9 +21,64 @@
 
 /* University logos */
 .logo {
-  height: 100%;
-  width: 10em;
+  height: 120px;
+  width: 135px;
 }
+
+.logo-exp {
+  height: 150px;
+  width: 180px;
+}
+
+/* Experience/Education bloc */
+.block{
+  margin-left: 0;
+}
+
 h1 {
   font-size: 2.1em !important;
+}
+
+.full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.socials{
+  display: block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 63px;
+  background: transparent;
+  font-size: 40px;
+  transition: .15s;
+}
+.socials:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #ffee10;
+  transition: .15s;
+  transform: scale(.9);
+  z-index: -1;
+}
+
+.socials:hover::before {
+  transform: scale(1.5);
+  box-shadow: 0 0 15px #ffee10;
+}
+
+.socials:hover {
+  color: #ffee10;
+  box-shadow: 0 0 20px #ffee10;
+  text-shadow: 0 0 15px #ffee10;
 }
