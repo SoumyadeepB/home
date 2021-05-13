@@ -20,7 +20,7 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 800,
-    background: "linear-gradient(to right, #a8c0ff, #3f2b96, #a8c0ff)",
+    background: "linear-gradient(90deg, #2af598 0%, #009efd 100%, #2af598 0%)",
   },
   media: {
     height: 0,
@@ -65,8 +65,12 @@ export default function Project() {
                   1
                 </Avatar>
               }
-              title="Voice Cloning"
-              subheader={Date().slice(0, 15)}
+              title="Deep Learning for Voice Cloning"
+              subheader={<div><p>Master Thesis <br/> Sony R&D Center Europe <br/>
+              <a href="https://soumyadeepb.github.io/mos-test/">
+                    [Voice Samples]
+                </a>
+                  </p></div>}
             />
             <CardMedia
               className={classes.media}
@@ -80,7 +84,7 @@ export default function Project() {
 
             <CardActions disableSpacing>
               <IconButton
-                style={{ marginRight: "120px", marginBottom: "20px" }}
+                style={{ marginRight: "96px", marginBottom: "6px" }}
                 className={clsx(classes.expand, {
                   [classes.expandOpen]: expanded,
                 })}
@@ -93,11 +97,9 @@ export default function Project() {
             </CardActions>
             <Collapse in={expanded} timeout="auto" unmountOnExit>
               <CardContent>
-                <Typography paragraph style={{ textAlign: "center" }}>
-                A miniature Deep Convolutional Generative Adversarial Network (DC-GAN) framework for the generation of MNIST digits.
-                <a href="https://github.com/SoumyadeepB/DeepLearning/blob/master/DC_GAN/DC_GAN_Exercise.ipynb">
-                    [view]
-                  </a>
+                <Typography paragraph style={{ textAlign: "center", marginTop:"-15px" }}>
+                Artificial simulation of the voice of a Speaker using few seconds of reference speech.<br/>
+               
                 </Typography>
               </CardContent>
             </Collapse>
@@ -109,26 +111,27 @@ export default function Project() {
             <CardHeader
               avatar={
                 <Avatar aria-label="recipe" className={classes.avatar}>
-                  1
+                  2
                 </Avatar>
               }
-              title="DC-GAN"
-              subheader={Date().slice(0, 15)}
+              title="Image Classification in the Browser"
+              subheader={<a href="https://soumyadeepb.github.io/image-classifier/">
+              [Application URL]
+            </a>}
             />
             <CardMedia
               className={classes.media}
-              image="dcgan.gif"
-              title="DC-GAN"
+              image="img_classifier.png"
+              title="Image Classifier"
               style={{
                 margin: "0 auto",
-                height: "78%",
-                width: "48%",
+                width: "80%",
               }}
             />
 
             <CardActions disableSpacing>
               <IconButton
-                style={{ marginRight: "120px", marginBottom: "20px" }}
+                style={{ marginRight: "96px", marginBottom: "6px" }}
                 className={clsx(classes.expand, {
                   [classes.expandOpen]: expanded,
                 })}
@@ -141,11 +144,57 @@ export default function Project() {
             </CardActions>
             <Collapse in={expanded} timeout="auto" unmountOnExit>
               <CardContent>
-                <Typography paragraph style={{ textAlign: "center" }}>
+                <Typography paragraph style={{ textAlign: "center", marginTop:"-15px" }}>
+                Image Classification on the browser using the pretrained MobileNet model.
+               
+                </Typography>
+              </CardContent>
+            </Collapse>
+          </Card>
+        </Carousel.Item>
+          
+        <Carousel.Item>
+          <Card className={classes.root}>
+            <CardHeader
+              avatar={
+                <Avatar aria-label="recipe" className={classes.avatar}>
+                  3
+                </Avatar>
+              }
+              title="DC-GAN"
+              subheader={<a href="https://github.com/SoumyadeepB/DeepLearning/blob/master/DC_GAN/DC_GAN_Exercise.ipynb">
+              [Repository]
+            </a>}
+            />
+            <CardMedia
+              className={classes.media}
+              image="dcgan.gif"
+              title="Deep Convolutional-GAN"
+              style={{
+                margin: "0 auto",
+                height: "78%",
+                width: "48%",
+              }}
+            />
+
+            <CardActions disableSpacing>
+              <IconButton
+                style={{ marginRight: "98px", marginBottom: "6px" }}
+                className={clsx(classes.expand, {
+                  [classes.expandOpen]: expanded,
+                })}
+                onClick={handleExpandClick}
+                aria-expanded={expanded}
+                aria-label="show more"
+              >
+                <ExpandMoreIcon />
+              </IconButton>
+            </CardActions>
+            <Collapse in={expanded} timeout="auto" unmountOnExit>
+              <CardContent>
+                <Typography paragraph style={{ textAlign: "center", marginTop:"-15px" }}>
                 A miniature Deep Convolutional Generative Adversarial Network (DC-GAN) framework for the generation of MNIST digits.
-                <a href="https://github.com/SoumyadeepB/DeepLearning/blob/master/DC_GAN/DC_GAN_Exercise.ipynb">
-                    [view]
-                  </a>
+                
                 </Typography>
               </CardContent>
             </Collapse>
@@ -156,7 +205,7 @@ export default function Project() {
             <CardHeader
               avatar={
                 <Avatar aria-label="recipe" className={classes.avatar}>
-                  2
+                  4
                 </Avatar>
               }
               title="Anomaly Detection of Stock Prices"
@@ -177,7 +226,7 @@ export default function Project() {
 
             <CardActions disableSpacing>
               <IconButton
-                style={{ marginRight: "120px", marginBottom: "20px" }}
+                style={{ marginRight: "96px", marginBottom: "6px" }}
                 className={clsx(classes.expand, {
                   [classes.expandOpen]: expanded,
                 })}
@@ -190,7 +239,7 @@ export default function Project() {
             </CardActions>
             <Collapse in={expanded} timeout="auto" unmountOnExit>
               <CardContent>
-                <Typography paragraph style={{ textAlign: "center" }}>
+                <Typography paragraph style={{ textAlign: "center", marginTop:"-15px" }}>
                 Detect anomalies in Ford’s historical stock price time series data with an LSTM autoencoder.                  
                 </Typography>
               </CardContent>
@@ -202,7 +251,7 @@ export default function Project() {
             <CardHeader
               avatar={
                 <Avatar aria-label="recipe" className={classes.avatar}>
-                  3
+                  5
                 </Avatar>
               }
               title="Battle of Neighborhoods"
@@ -223,7 +272,7 @@ export default function Project() {
 
             <CardActions disableSpacing>
               <IconButton
-                style={{ marginRight: "120px", marginBottom: "20px" }}
+                style={{ marginRight: "96px", marginBottom: "6px" }}
                 className={clsx(classes.expand, {
                   [classes.expandOpen]: expanded,
                 })}
@@ -236,7 +285,7 @@ export default function Project() {
             </CardActions>
             <Collapse in={expanded} timeout="auto" unmountOnExit>
               <CardContent>
-                <Typography paragraph style={{ textAlign: "center" }}>
+                <Typography paragraph style={{ textAlign: "center", marginTop:"-15px" }}>
                 Segmenting Neighborhoods based on popularity/location using ML and the FourSquare API.                  
                 </Typography>
               </CardContent>

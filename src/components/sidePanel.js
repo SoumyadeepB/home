@@ -3,8 +3,7 @@ import {
   Grid,
   IconButton,
   Toolbar,
-  Typography,
-  Fab
+  Typography
 } from "@material-ui/core";
 import BuildIcon from '@material-ui/icons/Build';
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
@@ -14,7 +13,7 @@ import StarsIcon from "@material-ui/icons/Stars";
 import WorkRoundedIcon from "@material-ui/icons/WorkRounded";
 import React from "react";
 import "./sidePanel.css";
-import { Row, Col, Container } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 
 export default class SidePanel extends React.Component {
   constructor(props) {

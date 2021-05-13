@@ -7,6 +7,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import ContactMailIcon from '@material-ui/icons/ContactMail';
+import TechTools from './scroll_menu.js';
 import "./main.css";
 
 export default class Portfolio extends React.Component {
@@ -43,20 +44,19 @@ export default class Portfolio extends React.Component {
           eraseDelay={100}
         />
         
-        
+        <Row>
+          <Col xs={12}>
         <h5 style={{ textAlign: "center", marginTop: "1em", fontFamily:"Noto Sans SC" }}>
           Tech and Tools Used: <br></br> 
-        </h5> 
-          <img src="https://www.vectorlogo.zone/logos/java/java-ar21.svg" width="100px"/>   
-          <img src="https://www.vectorlogo.zone/logos/python/python-horizontal.svg" width="100px"/>
-          <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-ar21.svg" width="100px"/>
-          <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-ar21.svg" width="100px"/>
-          <img src="https://www.vectorlogo.zone/logos/numpy/numpy-ar21.svg" width="100px"/>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Pandas_logo.svg" width="100px"/>
-          <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg"  width="100px"/>
-        
-
-        <br/><br/><br/><br/>
+          </h5>        
+          </Col>          
+          </Row>
+        <Row style={{ textAlign: "center"}}>
+        <Col md={{ span: 6, offset: 3 }} >
+          <TechTools/>
+        </Col>
+        </Row>
+        <br></br><br></br><br></br>
         <Row style={{ textAlign: "center", position: "static", bottom:"0px", marginBottom:"-100px"}}>
         <Col md={{ span: 4, offset: 4 }} >
         <a href="https://www.linkedin.com/in/soumyadeepb/"style={{ color: "inherit",margin:"25px" }}><LinkedInIcon style={{ fontSize: "48px" }}  className="socials" /></a>

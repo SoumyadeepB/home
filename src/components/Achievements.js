@@ -23,7 +23,7 @@ import MoreVertIcon from "@material-ui/icons/MoreVert";
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 800,
-    background: "linear-gradient(-90deg, #8a2387, #e94057, #f27121)",
+    background: "linear-gradient(90deg, #2af598 0%, #009efd 100%, #2af598 0%)",
   },
   media: {
     height: 0,
@@ -84,7 +84,7 @@ export default function Achievements() {
 
             <CardActions disableSpacing>
               <IconButton
-                style={{ marginRight: "120px", marginBottom: "20px" }}
+                style={{ marginRight: "96px", marginBottom: "6px" }}
                 className={clsx(classes.expand, {
                   [classes.expandOpen]: expanded,
                 })}
@@ -131,7 +131,7 @@ export default function Achievements() {
 
             <CardActions disableSpacing>
               <IconButton
-                style={{ marginRight: "120px", marginBottom: "20px" }}
+                style={{ marginRight: "96px", marginBottom: "6px" }}
                 className={clsx(classes.expand, {
                   [classes.expandOpen]: expanded,
                 })}
@@ -154,48 +154,7 @@ export default function Achievements() {
             </Collapse>
           </Card>
         </Carousel.Item>
-        <Carousel.Item>
-          <Card className={classes.root}>
-            <CardHeader
-              avatar={
-                <Avatar aria-label="recipe" className={classes.avatar}>
-                  C
-                </Avatar>
-              }
-              title="Certficate 3"
-              subheader={Date().slice(0, 15)}
-            />
-            <CardMedia
-              className={classes.media}
-              image="/static/images/cards/paella.jpg"
-              title="Certificate 3"
-            />
-
-            <CardActions disableSpacing>
-              <IconButton
-                style={{ marginRight: "120px", marginBottom: "20px" }}
-                className={clsx(classes.expand, {
-                  [classes.expandOpen]: expanded,
-                })}
-                onClick={handleExpandClick}
-                aria-expanded={expanded}
-                aria-label="show more"
-              >
-                <ExpandMoreIcon />
-              </IconButton>
-            </CardActions>
-            <Collapse in={expanded} timeout="auto" unmountOnExit>
-              <CardContent>
-                <Typography paragraph style={{ textAlign: "center" }}>
-                  Description:
-                  <a href="https://masterthemainframe.com/master-mainframe-2018-winners/">
-                    URL
-                  </a>
-                </Typography>
-              </CardContent>
-            </Collapse>
-          </Card>
-        </Carousel.Item>
+        
       </Carousel>
     </Container>
   );
