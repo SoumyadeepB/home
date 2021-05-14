@@ -28,9 +28,9 @@ export default class Portfolio extends React.Component {
             boxShadow: "0 0 0 3px #fff, 0 0 0 2px #000"
           }}
         />
-        <Typography variant="h4" style={{ textAlign: "center", marginTop: "1em", fontFamily:"Noto Sans SC" }}>Soumyadeep Bhattacharjee</Typography>
+        <Typography variant="h4" style={{ textAlign: "center", marginTop: "1em", fontFamily:"Roboto", fontWeight:"500", textShadow: "1px 1px 9px white, 0 0 25px grey, 0 0 25px white" }}>Soumyadeep Bhattacharjee</Typography>
         <Typography variant="h6" style={{ textAlign: "center", marginTop: "1em", fontFamily:"Noto Sans SC" }}>
-          M.Sc Computer Science (Autonomous Systems), Universität Stuttgart
+          M.Sc Computer Science (Autonomous Systems), <br/>Universität Stuttgart
           
           </Typography>
 
@@ -46,18 +46,19 @@ export default class Portfolio extends React.Component {
         
         <Row>
           <Col xs={12}>
-        <h5 style={{ textAlign: "center", marginTop: "1em", fontFamily:"Noto Sans SC" }}>
-          Tech and Tools Used: <br></br> 
+        <h5 style={{ textAlign: "center", marginTop: "8vh", marginBottom:"-2px", fontFamily:"Noto Sans SC" }}>
+          Tech and Tools Used:
           </h5>        
           </Col>          
           </Row>
+          
         <Row style={{ textAlign: "center"}}>
         <Col md={{ span: 6, offset: 3 }} >
           <TechTools/>
         </Col>
         </Row>
-        <br></br><br></br><br></br>
-        <Row style={{ textAlign: "center", position: "static", bottom:"0px", marginBottom:"-100px"}}>
+        
+        <Row style={{ textAlign: "center", position: "static", bottom:"0px", marginTop:"10vh",marginBottom:"-100px"}}>
         <Col md={{ span: 4, offset: 4 }} >
         <a href="https://www.linkedin.com/in/soumyadeepb/"style={{ color: "inherit",margin:"25px" }}><LinkedInIcon style={{ fontSize: "48px" }}  className="socials" /></a>
         <a href="https://github.com/SoumyadeepB"style={{ color: "inherit",margin:"25px" }}><GitHubIcon style={{ fontSize: "48px" }}  className="socials" /></a>

@@ -15,15 +15,12 @@ import {
   IconButton,
   Typography,
 } from "@material-ui/core";
-import FavoriteIcon from "@material-ui/icons/Favorite";
-import ShareIcon from "@material-ui/icons/Share";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import MoreVertIcon from "@material-ui/icons/MoreVert";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 800,
-    background: "linear-gradient(90deg, #2af598 0%, #009efd 100%, #2af598 0%)",
+    background: "linear-gradient(90deg, #2AF5B8 10%, #009efd 100%)",
   },
   media: {
     height: 0,

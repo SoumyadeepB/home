@@ -65,7 +65,7 @@ export default class SidePanel extends React.Component {
                   value={1}
                 >
                   <AccountCircleIcon style={{ marginRight: "10px", fontSize:"18px" }} />
-                  <Typography variant="subtitle1" className="subtitle1">Portfolio</Typography>
+                  <Typography variant="subtitle1" className="subtitle1">Profile</Typography>
                 </IconButton>
               </Grid>
               <Grid

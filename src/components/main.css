@@ -98,12 +98,20 @@ h1 {
 }
 
 .zoom {
-  padding: 10px;
+  padding: 6px;
   transition: transform .2s; /* Animation */
   width: 123px;
   margin: 0 auto;
+  transform: translate(-4.2em);
 }
 
 .zoom:hover {
-  transform: scale(1.41); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: translate(-4.2em) scale(1.41); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.arrow-prev{
+  margin-left:-24px;
+}
+.arrow-next{
+  margin-right:-24px;
 }

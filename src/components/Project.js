@@ -39,6 +39,9 @@ const useStyles = makeStyles((theme) => ({
   avatar: {
     backgroundColor: red[500],
   },
+  title:{
+    fontSize:"24px",
+  },
  }));
 
 export default function Project() {
@@ -64,9 +67,10 @@ export default function Project() {
                 <Avatar aria-label="recipe" className={classes.avatar}>
                   1
                 </Avatar>
-              }
+              }              
               title="Deep Learning for Voice Cloning"
-              subheader={<div><p>Master Thesis <br/> Sony R&D Center Europe <br/>
+              titleTypographyProps={{variant:'h6' }}
+              subheader={<div><p>Master Thesis (Sony R&D Center Europe) <br/>
               <a href="https://soumyadeepb.github.io/mos-test/">
                     [Voice Samples]
                 </a>
@@ -115,6 +119,7 @@ export default function Project() {
                 </Avatar>
               }
               title="Image Classification in the Browser"
+              titleTypographyProps={{variant:'h6' }}
               subheader={<a href="https://soumyadeepb.github.io/image-classifier/">
               [Application URL]
             </a>}
@@ -162,6 +167,7 @@ export default function Project() {
                 </Avatar>
               }
               title="DC-GAN"
+              titleTypographyProps={{variant:'h6' }}
               subheader={<a href="https://github.com/SoumyadeepB/DeepLearning/blob/master/DC_GAN/DC_GAN_Exercise.ipynb">
               [Repository]
             </a>}
@@ -209,6 +215,7 @@ export default function Project() {
                 </Avatar>
               }
               title="Anomaly Detection of Stock Prices"
+              titleTypographyProps={{variant:'h6' }}
               subheader={<a href="https://github.com/SoumyadeepB/Machine-Learning/tree/master/AnomalyDetector">
               [Project URL]
             </a>}
@@ -255,6 +262,7 @@ export default function Project() {
                 </Avatar>
               }
               title="Battle of Neighborhoods"
+              titleTypographyProps={{variant:'h6' }}
               subheader={<a href="https://github.com/SoumyadeepB/Coursera_Capstone/blob/master/Capstone_Project_Report.pdf">
               [Project URL]
             </a>}
