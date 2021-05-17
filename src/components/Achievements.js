@@ -56,22 +56,27 @@ export default function Achievements() {
         justifyContent: "center",
       }}
     >
-      <Carousel style={{ marginTop: "-80px", height: "75vh", width: "50vw" }}>
+      <Carousel style={{ marginTop: "-120px", height: "75vh", width: "50vw" }}>
         <Carousel.Item>
           <Card className={classes.root}>
             <CardHeader
               avatar={
                 <Avatar aria-label="recipe" className={classes.avatar}>
-                  A
+                  1
                 </Avatar>
               }
-              title="Certficate 1"
-              subheader={Date().slice(0, 15)}
+              title="IBM Master the Mainframe 2018"
+              titleTypographyProps={{variant:'h6' }}
+              subheader={
+                <a href="https://techchannel.com/Enterprise/05/2019/2018-master-the-mainframe-winners">
+                    [Winner listings]
+                  </a>
+              }
             />
             <CardMedia
               className={classes.media}
               image="MTM.png"
-              title="Master the Mainframe 2018"
+              title="IBM Master the Mainframe 2018"
               style={{
                 margin: "0 auto",
                 height: "22em",
@@ -81,7 +86,7 @@ export default function Achievements() {
 
             <CardActions disableSpacing>
               <IconButton
-                style={{ marginRight: "96px", marginBottom: "6px" }}
+                style={{ marginRight: "96px", marginBottom: "1px" }}
                 className={clsx(classes.expand, {
                   [classes.expandOpen]: expanded,
                 })}
@@ -95,10 +100,8 @@ export default function Achievements() {
             <Collapse in={expanded} timeout="auto" unmountOnExit>
               <CardContent>
                 <Typography paragraph style={{ textAlign: "center" }}>
-                  Description:
-                  <a href="https://masterthemainframe.com/master-mainframe-2018-winners/">
-                    URL
-                  </a>
+                IBM Master the Mainframe contest is a mainframe programming challenge, in which I was the regional winner from Europe in 2018, out of 18,000 students registered from over 120 countries.
+                  
                 </Typography>
               </CardContent>
             </Collapse>
@@ -109,11 +112,12 @@ export default function Achievements() {
             <CardHeader
               avatar={
                 <Avatar aria-label="recipe" className={classes.avatar}>
-                  B
+                  2
                 </Avatar>
               }
-              title="Certficate 2"
-              subheader={Date().slice(0, 15)}
+              title="Intel® Edge AI Scholarship Program"
+              titleTypographyProps={{variant:'h6' }}
+              subheader={"June, 2019"}
             />
             <CardMedia
               className={classes.media}
@@ -128,7 +132,7 @@ export default function Achievements() {
 
             <CardActions disableSpacing>
               <IconButton
-                style={{ marginRight: "96px", marginBottom: "6px" }}
+                style={{ marginRight: "96px", marginBottom: "1px" }}
                 className={clsx(classes.expand, {
                   [classes.expandOpen]: expanded,
                 })}
@@ -142,10 +146,8 @@ export default function Achievements() {
             <Collapse in={expanded} timeout="auto" unmountOnExit>
               <CardContent>
                 <Typography paragraph style={{ textAlign: "center" }}>
-                  Intel Edge AI Scholarship 2019 :
-                  <a href="https://masterthemainframe.com/master-mainframe-2018-winners/">
-                    URL
-                  </a>
+                  Recipient of Intel Edge AI Scholarship 2019, receiving full access to the Intel® Edge AI Course. 
+                  
                 </Typography>
               </CardContent>
             </Collapse>
